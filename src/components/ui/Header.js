@@ -10,7 +10,7 @@ import {Link} from "react-router-dom";
 import logo from '../../assets/logo.svg';
 
 /*
-*  Comment Test
+*  Comment Test, But lets erase it if send to production
 */
 
 const useStyles = makeStyles(theme => ({
