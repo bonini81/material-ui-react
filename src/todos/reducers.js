@@ -17,14 +17,20 @@ export const todos = (state=[], action) => {
     }
 
     case COMPLETED_TODO: {
-      const { text } = payload;
-      const completedTodo = {
-        text,
-        isCompleted: true
+    
+        const { text } = payload;
+    
+        return state.map( todo => {
+
+        if (todo.text === text) {
+          return { ...todo, isCompleted: true }
+        }
+        return todo;
+     })
 
       };
-      return state.concat(completedTodo);
-    }
+      
+
 
     case REMOVE_TODO: {
       const { text } = payload;
