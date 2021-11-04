@@ -24,6 +24,7 @@ export const isLoading = (state = false, action) => {
   }
 
 }
+//const initialState = { isLoading: false, data: [] }
 
 export const todos = (state=[], action) => {
   
