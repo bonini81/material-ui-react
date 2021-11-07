@@ -3,6 +3,7 @@ import { ThemeProvider } from '@material-ui/styles';
 import {BrowserRouter, Route, Switch} from "react-router-dom";     
 import theme from './ui/Theme';
 import Header from '../components/ui/Header';
+import Footer from '../components/ui/Footer';
 import { todos } from '../todos/reducers';
 import TodoList from '../todos/TodoList';
 
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/estimate" component={()=> <div>Estimate</div> }></Route>
       </Switch>
       </BrowserRouter>
+      <Footer />
     </ThemeProvider>
   );
 }
